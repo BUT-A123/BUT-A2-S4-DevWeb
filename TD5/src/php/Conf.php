@@ -1,0 +1,36 @@
+<?php
+
+class Conf
+{
+    private static $database = array(
+        'hostname' => '162.38.222.142',
+        'database' => 'iut',
+        'login' => 'renuccis', // votre login IUT
+        // votre mdp PostgreSQL = mot de passe LDAP
+        //                      = mot de passe sur les machines
+        'password' => '080996922BJ',
+    );
+
+    static public function getLogin()
+    {
+        return self::$database['login'];
+    }
+
+    static public function getHostname()
+    {
+        return self::$database['hostname'];
+    }
+
+    static public function getDatabase()
+    {
+        return self::$database['database'];
+    }
+
+    static public function getPassword()
+    {
+        return self::$database['password'];
+    }
+
+}
+
+?>

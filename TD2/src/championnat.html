@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>championnat</title>
+    <link rel="icon" href="img/icone.png" />
+    <link rel="stylesheet" type="text/css" href="css/championnat.css">
+    <script defer type="text/javascript" src="js/equipe.js"></script>
+    <script defer type="text/javascript" src="js/match.js"></script>
+    <script defer type="text/javascript" src="js/journee.js"></script>
+    <script defer type="text/javascript" src="js/championnat.js"></script>
+    <script defer type="text/javascript" src="js/scenario.js"></script>
+</head>
+<body>
+    <div>
+        <fieldset id="bloc-equipes">
+            <legend>équipes <img id="plus" src="img/plus.png"><img id="moins" src="img/moins.png"></legend>
+            <div id="equipes-engagees"></div>
+            <div id="liste-equipes">
+                <div>équipe 1 : <input type="text" id="nom-eq1"></div>
+                <div>équipe 2 : <input type="text" id="nom-eq2"></div>
+                <div>équipe 3 : <input type="text" id="nom-eq3"></div>
+                <div>équipe 4 : <input type="text" id="nom-eq4"></div>
+                <div>équipe 5 : <input type="text" id="nom-eq5"></div>
+                <div>équipe 6 : <input type="text" id="nom-eq6"></div>
+                <div>équipe 7 : <input type="text" id="nom-eq7"></div>
+                <div>équipe 8 : <input type="text" id="nom-eq8"></div>
+            </div>
+            <input type="button" id="lancer-championnat" value="lancer le championnat">
+        </fieldset>
+    </div>
+    <div>
+        <fieldset id="bloc-journee">
+            <legend id="num-journee">journée</legend>
+            <input type="button" id="journee-suivante" value="afficher la journée suivante">
+            <input type="button" id="jouer-journee" value="jouer la journée affichée">
+            <div id="match1"></div>
+            <div id="match2"></div>
+            <div id="match3"></div>
+            <div id="match4"></div>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset id="bloc-classement">
+            <legend>classement</legend>
+            <table>
+                <thead>
+                    <tr><th>Rang</th><th>Nom</th><th>Points</th><th>G</th><th>N</th><th>P</th><th>bp</th><th>bc</th><th>diff</th></tr>
+                </thead>
+                <tbody>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+</body>
+</html>
